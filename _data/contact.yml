@@ -6,6 +6,14 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
+- type: medium
+  icon: "fab fa-medium"
+  url: 'https://medium.com/@anusha_mukka'
+
+- type: devto
+  icon: "fab fa-dev"
+  url: 'https://dev.to/anusha_mukka'
+
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
@@ -25,7 +33,7 @@
 #
 # - type: stack-overflow
 #   icon: 'fab fa-stack-overflow'
-#   url:  ''                  # Fill with your stackoverflow homepage
+#   url: ''                   # Fill with your stackoverflow homepage
 #
 # - type: bluesky
 #   icon: 'fa-brands fa-bluesky'
@@ -38,3 +46,4 @@
 # - type: threads
 #   icon: 'fa-brands fa-threads'
 #   url: ''                   # Fill with your Threads profile link
+
