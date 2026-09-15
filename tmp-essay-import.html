@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Your AI Agent Just Read 4,000 Files. Can You Prove Which Ones?</title>
+</head>
+<body>
+<article>
+<p><em>The next observability problem is not model output. It is the trail of actions between a user’s request and the agent’s result.</em></p>
+<p>Imagine this: a legal team asks an internal AI agent to summarize a due-diligence room. The agent searches folders, opens documents, follows links, calls a document parser, and produces a clean two-page brief.</p>
+<p>Everyone is impressed.</p>
+<p>A week later, someone asks a less glamorous question: Which files did it actually read? Did it cross into the restricted HR folder? Did it send any text to an external service? Which permissions allowed that? Was a human approval required anywhere?</p>
+<p>The application log says: <code>Task completed successfully.</code></p>
+<p>That is not an audit trail. It is a shrug with a timestamp.</p>
+<p>The scenario is hypothetical, but the architecture problem is already here. We are connecting language models to file stores, source repositories, email, ticketing systems, payment APIs, cloud consoles, and databases. Then we are asking them to plan their own route through those systems.</p>
+<p>We keep talking about whether the answer was correct. We should also be asking whether the path was accountable.</p>
+<h2>Agents turn one request into a chain of privileged actions</h2>
+<p>A traditional application usually has a fairly visible execution path. A user clicks a button. The application calls a known service. The database records a known transaction. Even when the internals are complicated, the security team can usually trace the request through stable boundaries.</p>
+<p>An agent changes that shape.</p>
+<p>The user gives it a goal, not a route. The agent decides which tools to call, in what order, with which arguments, and sometimes whether to delegate part of the work to another agent. One innocent-looking request can become dozens or thousands of reads, transformations, searches, and writes.</p>
+<p>The prompt is not the transaction. It is the opening instruction.</p>
+<p>That distinction matters because most “AI observability” still leans heavily on prompts, completions, latency, token count, and model errors. Those metrics help us debug a model-powered feature. They do not tell us what happened across the systems the agent could touch.</p>
+<p>If an agent opened 4,000 files, the important evidence is not a transcript of it saying, “I’ll inspect the documents now.” The important evidence is the 4,000 authorization decisions and resource accesses that followed.</p>
+<h2>Build a receipt, not a diary</h2>
+<p>The first instinct is often to log everything. Every prompt. Every response. Every intermediate thought. Every tool payload.</p>
+<p>That creates a different problem: the audit system becomes a second copy of the sensitive data the agent handled.</p>
+<p>A useful audit trail is not a diary of the model’s inner monologue. It is a structured receipt for externally meaningful actions.</p>
+<p>That receipt should let an investigator answer:</p>
+<ul>
+<li>Who initiated the task?</li>
+<li>Which agent and software version acted?</li>
+<li>What tool was invoked?</li>
+<li>Which resource was touched?</li>
+<li>What authorization decision was made?</li>
+<li>What changed in the outside world?</li>
+<li>Was another agent involved?</li>
+<li>Was a human asked to approve anything?</li>
+</ul>
+<p>Notice what is missing: hidden chain-of-thought. We do not need to record private reasoning to establish accountability. We need a compact, durable account of decisions and effects.</p>
+<p>This is also why “just send all the logs to the security information and event management system” is not a design. OWASP’s authorization guidance makes a useful point: both too little logging and too much logging can become security weaknesses. The event has to carry the right evidence, in a form that can be protected, queried, and retained deliberately.</p>
+<h2>A minimum event envelope can go a long way</h2>
+<p>I would start with one event schema shared by every tool call, regardless of the model or orchestration framework.</p>
+<p>At minimum, each event should include:</p>
+<ol>
+<li><strong>Principal</strong> — the human or service account on whose behalf the agent is acting.</li>
+<li><strong>Agent identity</strong> — the agent, model, system prompt, tool definition, and policy versions involved.</li>
+<li><strong>Task lineage</strong> — the originating request, parent task, child task, and correlation identifiers.</li>
+<li><strong>Action</strong> — the tool and operation requested, such as <code>read_file</code>, <code>send_email</code>, or <code>update_record</code>.</li>
+<li><strong>Resource</strong> — the object identifier and its security classification, without copying the object’s contents into the log.</li>
+<li><strong>Authorization decision</strong> — allow, deny, or require approval, plus the policy version that produced the decision.</li>
+<li><strong>Outcome</strong> — success, failure, partial completion, and a safe summary of the returned result.</li>
+<li><strong>Side effect</strong> — whether the action only read data or changed something outside the agent runtime.</li>
+</ol>
+<p>A ninth field becomes essential as soon as humans enter the loop: the approval record. Who approved what, under which scope, and for how long?</p>
+<p>This event envelope is not glamorous. That is a compliment. Good audit infrastructure should be boring enough to survive a model change, an orchestration rewrite, and the departure of the engineer who built the first prototype.</p>
+<h2>Permission checks belong at the moment of action</h2>
+<p>A common mistake is to authorize the agent once, at the start of the session, and treat every later tool call as covered by that decision.</p>
+<p>That is too coarse.</p>
+<p>The agent may begin by reading a public policy document and end by trying to email a customer list. The user’s identity has not changed, but the risk certainly has.</p>
+<p>Authorization should be evaluated at every execution boundary. The policy engine should consider the human principal, the agent identity, the current task, the requested operation, the target resource, and whether the action is reversible.</p>
+<p>This is where the audit trail and the control plane meet. The same gateway that decides whether a tool call is allowed should emit the evidence of that decision. Otherwise, the organization ends up reconciling two incomplete stories: what the agent framework says it requested and what the downstream system says it received.</p>
+<p>For low-risk reads, the policy may allow the action automatically. A financial transfer, an external message, a permission change, or a destructive command should trigger a stronger rule. The point is not to place a human in front of every click. It is to make the approval boundary intentional and visible.</p>
+<h2>The denials may be more valuable than the successes</h2>
+<p>Teams naturally build dashboards around successful tasks: completion rate, latency, cost, and user satisfaction. I would add a first-class view for denied and interrupted actions.</p>
+<p>A denied tool call tells you what the agent tried to do before it became an incident.</p>
+<p>Repeated attempts to access a restricted folder may reveal an ambiguous instruction, an overbroad retrieval strategy, a malicious document, or a permission model the agent does not understand. A sudden rise in approval requests may indicate a prompt change that made the agent more aggressive. A tool call blocked because its destination changed may be the first signal of compromised context.</p>
+<p>These are near misses. In safety engineering, near misses are not noise. They are free evidence.</p>
+<p>Keep them. Correlate them. Review the patterns. A system that records only successful actions tells you how work gets done. A system that also records denied actions tells you where the guardrails are under pressure.</p>
+<h2>Reconstructability matters more than perfect replay</h2>
+<p>Teams sometimes promise that every agent run will be reproducible. That is a difficult promise to keep.</p>
+<p>Models change. Sampling introduces variation. Search results move. External APIs return new data. A tool can behave differently after an upgrade. Even the same prompt against the same model may not generate the same plan.</p>
+<p>The practical target is reconstructability, not theatrical certainty.</p>
+<p>You should be able to reconstruct the state that mattered:</p>
+<ul>
+<li>the model and tool versions;</li>
+<li>the policy bundle in force;</li>
+<li>the resources requested;</li>
+<li>the authorization outcomes;</li>
+<li>the approvals granted;</li>
+<li>the side effects committed; and</li>
+<li>the outputs that crossed a trust boundary.</li>
+</ul>
+<p>For particularly sensitive actions, store a content hash, version identifier, or immutable snapshot reference. Do not stuff the full document into a general-purpose log. The goal is to prove which object was used without creating an ungoverned shadow archive.</p>
+<p>Tamper resistance matters here, too. If the same agent that can alter a record can also alter the evidence of that action, the “audit trail” is merely another mutable table. Separate write paths, append-only storage, strict retention controls, and integrity checks are not compliance theater. They are what makes the history believable.</p>
+<h2>You do not need a giant platform to start</h2>
+<p>The architecture can begin with five pieces:</p>
+<ol>
+<li>Put a gateway in front of every agent tool.</li>
+<li>Propagate the initiating user’s identity and task identifier through every call.</li>
+<li>Evaluate policy at the gateway, not only inside the prompt.</li>
+<li>Emit a structured, redacted event to an append-only audit sink.</li>
+<li>Alert on high-risk approvals, repeated denials, unusual data volume, and unexpected destinations.</li>
+</ol>
+<p>Then test the trail as if an incident had already happened.</p>
+<p>NIST’s Artificial Intelligence Risk Management Framework uses the functions Govern, Map, Measure, and Manage. Agent auditability is where those verbs become operational. You cannot measure behavior you did not observe. You cannot manage a side effect you cannot attribute. You cannot govern an action history that disappears when a trace buffer expires.</p>
+<p>The model is only one component. The system includes the agent runtime, tools, identity provider, policy engine, data stores, approval interface, and audit pipeline. The evidence has to cross those boundaries with the task.</p>
+<h2>Three tests I would run before production</h2>
+<p>Before calling an agent “enterprise ready,” give the audit trail three simple tests.</p>
+<p><strong>The ten-minute investigation test.</strong> Pick a completed task. Can an engineer who did not build the agent identify every external system it touched, every resource it changed, and the principal under whose authority it acted — in ten minutes?</p>
+<p><strong>The delegation test.</strong> Let one agent hand work to another. Does the child action preserve the original principal and task lineage, or does it appear as an unexplained service account event?</p>
+<p><strong>The denial test.</strong> Ask the agent to perform an action the policy should block. Can you see the attempted action, the policy that denied it, and the absence of a downstream side effect?</p>
+<p>If any answer is no, the problem is not the dashboard. The evidence was never captured.</p>
+<h2>The real question comes after “it worked”</h2>
+<p>We are moving from software that executes predefined workflows to software that constructs workflows at runtime. That is a meaningful shift in capability. It has to be matched by an equally meaningful shift in accountability.</p>
+<p>When an agent produces a useful answer, “Did it work?” is only the first question.</p>
+<p>The second is: “Can we prove what it did?”</p>
+<p>If the agent read 4,000 files, I do not want a screenshot of the final summary. I want a trustworthy receipt.</p>
+<hr>
+<h2>Further reading</h2>
+<ul>
+<li><a href="https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf">NIST Artificial Intelligence Risk Management Framework (AI RMF 1.0)</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html">OWASP Authorization Cheat Sheet: Implement Appropriate Logging</a></li>
+</ul>
+</article>
+</body>
+</html>
