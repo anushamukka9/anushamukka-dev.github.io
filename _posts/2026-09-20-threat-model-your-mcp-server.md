@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Threat-Model Your MCP Server Before Attackers Do It for You"
-date: 2026-09-20 08:22:00 -0500
+date: 2026-09-20 07:00:00 -0500
 categories: [Writing]
 tags: [AI, Security, MCP, Agents, Threat Modeling]
 description: "A practitioner's STRIDE threat-modeling walkthrough for Model Context Protocol servers: trust boundaries, a canonical tools/call exchange, real curl probes, and the limitations STRIDE won't catch."
