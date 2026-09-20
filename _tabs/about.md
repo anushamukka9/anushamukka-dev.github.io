@@ -14,10 +14,19 @@ The through-line has always been the same: taking an ambiguous, high-stakes prob
 
 This is where I write about that work and the ideas behind it — essays and technical notes on the systems I build and the decisions behind them.
 
+### Professional service
+
+- IEEE Senior Member; served on the IEEE Senior Member Elevation Panel (June 2026)
+- Associate Reviewer, Journal of Information Technology Education: Innovations in Practice
+- Reviewer, UbiComp/ISWC 2026 Posters & Demos
+- Session Chair, IEEE Technology Innovation Conference (TIC) 2026
+- Reviewer, ISACA Global Achievement Awards 2027
+- Program committee and peer review service across ACM and IEEE conferences (2026)
+
 ### Contact
 
 - Email: anushamukka9@gmail.com
 - LinkedIn: [linkedin.com/in/anushamukka9](https://www.linkedin.com/in/anushamukka9)
 - GitHub: [github.com/anushamukka9](https://github.com/anushamukka9)
 - ORCID: [orcid.org/0009-0007-3887-7907](https://orcid.org/0009-0007-3887-7907)
-- DZone: [Policy-as-Code for AI Systems](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)
+- DZone: [Policy-as-Code for AI Systems, by Anusha Mukka](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)
