@@ -8,9 +8,9 @@ description: "Essays and technical writing by software architect Anusha Mukka on
 
 ## Featured
 
-**[Policy-as-Code for AI Systems: Governance at Infrastructure](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)** · September 16, 2026
+**[Policy-as-Code for AI Systems: Governance at Infrastructure](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)** · September 16, 2026 · by Anusha Mukka
 
-Your AI governance policy shouldn't be a document — it should be code. On turning every governance assertion into a machine-enforced gate: at training time, at the serving gateway, and in continuous runtime monitoring. [Read on DZone](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance).
+Your AI governance policy shouldn't be a document — it should be code. On turning every governance assertion into a machine-enforced gate: at training time, at the serving gateway, and in continuous runtime monitoring. Editorially reviewed and published on DZone. [Read the article by Anusha Mukka on DZone](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance).
 
 **[Your Firewall Doesn't Speak LLM! We Gave AI Agents the Keys. Nobody Asked If the Locks Still Work.](https://medium.com/@anusha_mukka/we-gave-ai-agents-the-keys-nobody-asked-if-the-locks-still-work-131a7085ab1e)** · April 17, 2026
 
