@@ -8,6 +8,10 @@ description: "Essays and technical writing by software architect Anusha Mukka on
 
 ## Featured
 
+**[Never Let the Confined Process Dial Home](https://anushamukka.com/posts/never-let-the-confined-process-dial-home/)** · September 23, 2026 · by Anusha Mukka
+
+CVE-2026-82533 let DeepSeek's sandboxed coding agent switch off its own sandbox with a single request to localhost. On the design lesson behind the flaw: a confinement boundary that the confined party can call is not a boundary.
+
 **[Policy-as-Code for AI Systems: Governance at Infrastructure](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)** · September 16, 2026 · by Anusha Mukka
 
 Your AI governance policy shouldn't be a document — it should be code. On turning every governance assertion into a machine-enforced gate: at training time, at the serving gateway, and in continuous runtime monitoring. Editorially reviewed and published on DZone. [Read the article by Anusha Mukka on DZone](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance).
