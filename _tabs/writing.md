@@ -24,6 +24,15 @@ Your AI governance policy shouldn't be a document — it should be code. On turn
 
 On agentic AI and the security assumptions it quietly breaks. [Read on Medium](https://medium.com/@anusha_mukka/we-gave-ai-agents-the-keys-nobody-asked-if-the-locks-still-work-131a7085ab1e).
 
+## Tutorials
+
+Hands-on walkthroughs you can build in an afternoon. Each one starts from a real failure, gives you runnable code, and tells you honestly where the approach breaks. [Browse all tutorials](/tutorials/)
+
+{% assign tutorials = site.posts | where_exp: "post", "post.categories contains 'Tutorials'" %}
+{% for post in tutorials %}
+- [{{ post.title }}]({{ post.url }}) · {{ post.date | date: "%B %-d, %Y" }}
+{% endfor %}
+
 ## On this site
 
 {% for post in site.posts %}
