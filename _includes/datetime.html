@@ -1,0 +1,29 @@
+<!--
+  Date format snippet (site override of jekyll-theme-chirpy v7.5.0).
+
+  Renders nothing for posts in the Tutorials category, which are
+  maintained as evergreen, dateless content. All other posts render
+  exactly as the theme does.
+
+  Original: _includes/datetime.html @ v7.5.0
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+{% assign _dt_post = post | default: page %}
+{% unless _dt_post.categories contains 'Tutorials' %}
+{% assign df_strftime = site.data.locales[include.lang].df.post.strftime | default: '%d/%m/%Y' %}
+{% assign df_dayjs = site.data.locales[include.lang].df.post.dayjs | default: 'DD/MM/YYYY' %}
+
+<time
+  {% if include.class %}
+    class="{{ include.class }}"
+  {% endif %}
+  data-ts="{{ include.date | date: '%s' }}"
+  data-df="{{ df_dayjs }}"
+  {% if include.tooltip %}
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  {% endif %}
+>
+  {{ include.date | date: df_strftime }}
+</time>
+{% endunless %}
