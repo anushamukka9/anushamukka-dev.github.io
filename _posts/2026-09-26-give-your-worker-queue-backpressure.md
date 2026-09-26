@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Give Your Worker Queue Backpressure Before It Falls Over"
-date: 2026-09-26 15:00:00 -0500
+date: 2026-09-26 13:00:00 -0500
 categories: [Tutorials]
 tags: [Tutorials, Distributed Systems, Reliability, SRE]
 description: "A step-by-step walkthrough: bounded queues, 429 with Retry-After, and a tiny adaptive limiter that keeps a Python worker alive under a flood."
