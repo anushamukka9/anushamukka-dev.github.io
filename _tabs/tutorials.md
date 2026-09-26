@@ -10,7 +10,7 @@ Step-by-step tutorials you can build in an afternoon. Each one starts from a rea
 
 {% assign tutorials = site.posts | where_exp: "post", "post.categories contains 'Tutorials'" %}
 {% for post in tutorials %}
-- [{{ post.title }}]({{ post.url }}) · {{ post.date | date: "%B %-d, %Y" }}
+- [{{ post.title }}]({{ post.url }})
 
   {{ post.description }}
 {% endfor %}
