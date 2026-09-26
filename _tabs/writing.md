@@ -30,13 +30,15 @@ Hands-on walkthroughs you can build in an afternoon. Each one starts from a real
 
 {% assign tutorials = site.posts | where_exp: "post", "post.categories contains 'Tutorials'" %}
 {% for post in tutorials %}
-- [{{ post.title }}]({{ post.url }}) · {{ post.date | date: "%B %-d, %Y" }}
+- [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
 ## On this site
 
 {% for post in site.posts %}
+{% unless post.categories contains 'Tutorials' %}
 - [{{ post.title }}]({{ post.url }}) · {{ post.date | date: "%B %-d, %Y" }}
+{% endunless %}
 {% endfor %}
 
 ## On DEV Community
