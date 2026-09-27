@@ -8,6 +8,10 @@ description: "Essays and technical writing by software architect Anusha Mukka on
 
 ## Featured
 
+**[Your Servers Disagree About What Time It Is](https://anushamukka.com/posts/your-servers-disagree-about-what-time-it-is/)** · September 27, 2026 · by Anusha Mukka
+
+Clock skew is the quiet bug behind sessions that expire early, charges that appear twice, and certificates valid nowhere. On NTP's real guarantees, TrueTime's commit-wait, fencing tokens, and the afternoon-sized monitoring setup that catches drift before it pages you.
+
 **[Backpressure: The Load-Shedding You Skip Until the Outage](https://anushamukka.com/posts/backpressure-the-load-shedding-you-skip-until-the-outage/)** · September 25, 2026 · by Anusha Mukka
 
 Queues do not absorb load. They schedule the outage for later, with interest. On bounded queues, 503 with Retry-After, adaptive concurrency limits, and the afternoon-sized backpressure policy.
@@ -61,3 +65,5 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) — essays on sca
 - [The Illusion of Scale, Part 2: When Your Data Model Becomes Your Bottleneck](https://dev.to/anusha_mukka/when-your-data-model-becomes-your-bottleneck-part-2-3b6m)
 - [The Illusion of Scale, Part 1: When Your "Scalable" System Isn't](https://dev.to/anusha_mukka/the-illusion-of-scale-part-1-when-your-scalable-system-isnt-1337)
 - [When the Cloud is Too Slow: Enter Fog Computing](https://dev.to/anusha_mukka/when-the-cloud-is-too-slow-enter-fog-computing-2egh)
+- [Exactly-Once Delivery Is a Lie. Idempotency Keys Are the Practical Answer.](https://dev.to/anusha_mukka/exactly-once-delivery-is-a-lie-idempotency-keys-are-the-practical-answer-3351)
+- [Your Agent Took an Action You Did Not Intend](https://dev.to/anusha_mukka/your-agent-took-an-action-you-did-not-intend-2koi)
