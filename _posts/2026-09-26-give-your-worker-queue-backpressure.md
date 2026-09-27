@@ -13,6 +13,8 @@ Here is the uncomfortable truth about queues: they do not absorb load. They conv
 
 This tutorial fixes that. You will take a Python worker with an unbounded queue, watch it fall over under a flood, and then give it three layers of backpressure: a bounded queue, load shedding with 429 and Retry-After, and a small adaptive concurrency limit that tunes itself. No new infrastructure required. All of it is code you can read in one sitting.
 
+> **Companion code:** the full working project for this tutorial lives at [anushamukka9/queue-backpressure](https://github.com/anushamukka9/queue-backpressure). Clone it, run the flood scripts, watch the naive version fall over first.
+
 ## What you will build
 
 By the end you will have three runnable pieces:
