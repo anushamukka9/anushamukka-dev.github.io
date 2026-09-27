@@ -8,7 +8,7 @@ description: "Essays and technical writing by software architect Anusha Mukka on
 
 ## Featured
 
-**[Your Servers Disagree About What Time It Is](https://anushamukka.com/posts/your-servers-disagree-about-what-time-it-is/)** · September 27, 2026 · by Anusha Mukka
+**[Your Servers Disagree About What Time It Is](https://anushamukka.com/posts/your-servers-disagree-about-what-time-it-is/)** · by Anusha Mukka
 
 Clock skew is the quiet bug behind sessions that expire early, charges that appear twice, and certificates valid nowhere. On NTP's real guarantees, TrueTime's commit-wait, fencing tokens, and the afternoon-sized monitoring setup that catches drift before it pages you.
 
