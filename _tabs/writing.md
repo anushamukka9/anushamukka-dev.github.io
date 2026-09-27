@@ -12,19 +12,19 @@ description: "Essays and technical writing by software architect Anusha Mukka on
 
 Clock skew is the quiet bug behind sessions that expire early, charges that appear twice, and certificates valid nowhere. On NTP's real guarantees, TrueTime's commit-wait, fencing tokens, and the afternoon-sized monitoring setup that catches drift before it pages you.
 
-**[Backpressure: The Load-Shedding You Skip Until the Outage](https://anushamukka.com/posts/backpressure-the-load-shedding-you-skip-until-the-outage/)** · September 25, 2026 · by Anusha Mukka
+**[Backpressure: The Load-Shedding You Skip Until the Outage](https://anushamukka.com/posts/backpressure-the-load-shedding-you-skip-until-the-outage/)** · by Anusha Mukka
 
 Queues do not absorb load. They schedule the outage for later, with interest. On bounded queues, 503 with Retry-After, adaptive concurrency limits, and the afternoon-sized backpressure policy.
 
-**[Never Let the Confined Process Dial Home](https://anushamukka.com/posts/never-let-the-confined-process-dial-home/)** · September 23, 2026 · by Anusha Mukka
+**[Never Let the Confined Process Dial Home](https://anushamukka.com/posts/never-let-the-confined-process-dial-home/)** · by Anusha Mukka
 
 CVE-2026-82533 let DeepSeek's sandboxed coding agent switch off its own sandbox with a single request to localhost. On the design lesson behind the flaw: a confinement boundary that the confined party can call is not a boundary.
 
-**[Policy-as-Code for AI Systems: Governance at Infrastructure](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)** · September 16, 2026 · by Anusha Mukka
+**[Policy-as-Code for AI Systems: Governance at Infrastructure](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)** · by Anusha Mukka
 
 Your AI governance policy shouldn't be a document — it should be code. On turning every governance assertion into a machine-enforced gate: at training time, at the serving gateway, and in continuous runtime monitoring. Editorially reviewed and published on DZone. [Read the article by Anusha Mukka on DZone](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance).
 
-**[Your Firewall Doesn't Speak LLM! We Gave AI Agents the Keys. Nobody Asked If the Locks Still Work.](https://medium.com/@anusha_mukka/we-gave-ai-agents-the-keys-nobody-asked-if-the-locks-still-work-131a7085ab1e)** · April 17, 2026
+**[Your Firewall Doesn't Speak LLM! We Gave AI Agents the Keys. Nobody Asked If the Locks Still Work.](https://medium.com/@anusha_mukka/we-gave-ai-agents-the-keys-nobody-asked-if-the-locks-still-work-131a7085ab1e)**
 
 On agentic AI and the security assumptions it quietly breaks. [Read on Medium](https://medium.com/@anusha_mukka/we-gave-ai-agents-the-keys-nobody-asked-if-the-locks-still-work-131a7085ab1e).
 
@@ -41,7 +41,7 @@ Hands-on walkthroughs you can build in an afternoon. Each one starts from a real
 
 {% for post in site.posts %}
 {% unless post.categories contains 'Tutorials' %}
-- [{{ post.title }}]({{ post.url }}) · {{ post.date | date: "%B %-d, %Y" }}
+- [{{ post.title }}]({{ post.url }})
 {% endunless %}
 {% endfor %}
 
