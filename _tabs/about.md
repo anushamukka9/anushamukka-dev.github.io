@@ -16,6 +16,7 @@ This is where I write about that work and the ideas behind it — essays and tec
 
 ### Professional service
 
+- Fellow of BCS, The Chartered Institute for IT (FBCS)
 - IEEE Senior Member; served on the IEEE Senior Member Elevation Panel (June 2026)
 - Associate Reviewer, Journal of Information Technology Education: Innovations in Practice
 - Reviewer, UbiComp/ISWC 2026 Posters & Demos
