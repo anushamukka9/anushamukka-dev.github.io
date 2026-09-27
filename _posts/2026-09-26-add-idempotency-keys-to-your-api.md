@@ -11,6 +11,8 @@ Your customer's card gets charged twice. Your code is not wrong. Their phone ret
 
 The fix is not to stop retrying. Retries are correct; the network owes you nothing. The fix is to make the second attempt free. That is what an idempotency key does: the client sends a unique key with the request, and your API promises that repeating the same key repeats the result instead of repeating the work.
 
+> **Companion code:** the full working project for this tutorial lives at [anushamukka9/idempotency-keys](https://github.com/anushamukka9/idempotency-keys). Clone it, run the tests, break things on purpose.
+
 ## What you will build
 
 By the end of this tutorial you will have a small FastAPI service with a middleware that reads an `Idempotency-Key` header, fingerprints each request, records in-flight and completed responses, replays the recorded response on retry, and expires old keys. About an hour of work, and it generalizes to any framework with middleware.
