@@ -11,6 +11,8 @@ Your agent has a shell tool. That is the whole threat model. A retrieved documen
 
 Every agent tutorial shows you how to define tools. Almost none show you how to restrain them. Here is the part they skip: a gate between the model's decision and the tool's execution that checks each call against a policy you wrote and writes down the answer. Deny by default. Allow by exception. Log everything.
 
+> **Companion code:** the full working project for this tutorial lives at [anushamukka9/agent-policy-gate](https://github.com/anushamukka9/agent-policy-gate). Clone it, run the tests, try to sneak a bad tool call past the gate.
+
 ## Know What You Are Building
 
 In thirty minutes you will build three things in one Python file: a policy written as a plain dictionary, a `check_call(tool, args)` function that returns an allow-or-deny decision with a reason, and an audit log recording every decision as a JSON line. Underneath them sits a toy agent loop with three tools: `read_file`, `run_shell`, and `send_email`. By the end, no tool executes without a policy decision, and you will have watched the gate allow a benign call and refuse a malicious one.
