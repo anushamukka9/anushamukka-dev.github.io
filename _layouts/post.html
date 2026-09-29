@@ -21,13 +21,9 @@ script_includes:
     {% endif %}
 
     <div class="post-meta text-muted">
-      <!-- lastmod date -->
-      {% if page.last_modified_at and page.last_modified_at != page.date %}
-        <span>
-          {{ site.data.locales[lang].post.updated }}
-          {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
-        </span>
-      {% endif %}
+      <!-- lastmod date removed: site is dateless by design (Sept 27, 2026).
+           The datetime.html override renders nothing, so the "Updated" label
+           would sit next to an empty date. Suppressed entirely. -->
 
       {% if page.image %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
