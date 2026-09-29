@@ -12,7 +12,7 @@ Most of my career has been spent on infrastructure where the stakes are real: pl
 
 The through-line has always been the same: taking an ambiguous, high-stakes problem and turning it into an architecture that holds.
 
-This is where I write about that work and the ideas behind it — essays and technical notes on the systems I build and the decisions behind them.
+This is where I write about that work and the ideas behind it - essays and technical notes on the systems I build and the decisions behind them.
 
 ### Professional service
 
