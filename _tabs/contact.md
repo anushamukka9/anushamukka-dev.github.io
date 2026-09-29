@@ -4,6 +4,9 @@ icon: fas fa-envelope
 order: 5
 title: Contact
 description: "Contact software architect Anusha Mukka."
+seo:
+  type: WebPage
+
 ---
 
 The best way to reach me is email: [anushamukka9@gmail.com](mailto:anushamukka9@gmail.com).
