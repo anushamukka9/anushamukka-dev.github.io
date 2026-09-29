@@ -25,7 +25,7 @@ CVE-2026-82533 let DeepSeek's sandboxed coding agent switch off its own sandbox 
 
 **[Policy-as-Code for AI Systems: Governance at Infrastructure](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)** · by Anusha Mukka
 
-Your AI governance policy shouldn't be a document — it should be code. On turning every governance assertion into a machine-enforced gate: at training time, at the serving gateway, and in continuous runtime monitoring. Editorially reviewed and published on DZone. [Read the article by Anusha Mukka on DZone](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance).
+Your AI governance policy shouldn't be a document. It should be code. On turning every governance assertion into a machine-enforced gate: at training time, at the serving gateway, and in continuous runtime monitoring. Editorially reviewed and published on DZone. [Read the article by Anusha Mukka on DZone](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance).
 
 **[Your Firewall Doesn't Speak LLM! We Gave AI Agents the Keys. Nobody Asked If the Locks Still Work.](https://medium.com/@anusha_mukka/we-gave-ai-agents-the-keys-nobody-asked-if-the-locks-still-work-131a7085ab1e)**
 
@@ -50,7 +50,7 @@ Hands-on walkthroughs you can build in an afternoon. Each one starts from a real
 
 ## On DEV Community
 
-I also publish on [DEV Community](https://dev.to/anusha_mukka) — essays on scale, security, and the craft of building systems that hold up.
+I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale, security, and the craft of building systems that hold up.
 
 - [The Admin Script That Became a Security System](https://dev.to/anusha_mukka/the-admin-script-that-became-a-security-system-1ljm)
 - [Your Cache Is Part of the Security Model](https://dev.to/anusha_mukka/your-cache-is-part-of-the-security-model-44n2)
