@@ -4,6 +4,9 @@ icon: fas fa-pen-nib
 order: 1
 title: Writing
 description: "Essays and technical writing by software architect Anusha Mukka on AI infrastructure, distributed systems, and security architecture."
+seo:
+  type: WebPage
+
 ---
 
 ## Featured
