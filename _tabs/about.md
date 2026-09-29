@@ -29,5 +29,6 @@ This is where I write about that work and the ideas behind it - essays and techn
 - Email: anushamukka9@gmail.com
 - LinkedIn: [linkedin.com/in/anushamukka9](https://www.linkedin.com/in/anushamukka9)
 - GitHub: [github.com/anushamukka9](https://github.com/anushamukka9)
+- Medium: [medium.com/@anusha_mukka](https://medium.com/@anusha_mukka)
 - ORCID: [orcid.org/0009-0007-3887-7907](https://orcid.org/0009-0007-3887-7907)
 - DZone: [Policy-as-Code for AI Systems, by Anusha Mukka](https://dzone.com/articles/policy-as-code-for-ai-systems-enforcing-governance)
