@@ -11,6 +11,10 @@ seo:
 
 ## Featured
 
+**[Stop Trying to Invalidate Your Cache. Budget the Staleness Instead.](https://anushamukka.com/posts/stop-trying-to-invalidate-your-cache/)** · by Anusha Mukka
+
+Cache invalidation cannot be perfect in a distributed system, so stop chasing it. On the delete-versus-in-flight-read race every explainer skips, and four mechanisms that honor an explicit staleness budget: TTLs with jitter, versioned keys, request coalescing, and stale-while-revalidate.
+
 **[Your Servers Disagree About What Time It Is](https://anushamukka.com/posts/your-servers-disagree-about-what-time-it-is/)** · by Anusha Mukka
 
 Clock skew is the quiet bug behind sessions that expire early, charges that appear twice, and certificates valid nowhere. On NTP's real guarantees, TrueTime's commit-wait, fencing tokens, and the afternoon-sized monitoring setup that catches drift before it pages you.
