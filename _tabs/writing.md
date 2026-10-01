@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Two-Phase Commit Is a Promise No One Can Keep](https://anushamukka.com/posts/two-phase-commit-is-a-promise-no-one-can-keep/)** · by Anusha Mukka
+
+When the coordinator dies mid-commit, the participants hold their locks forever. On the blocking window every explainer mentions and none of them replace, why no protocol variant closes it, and the saga pattern that does: sequential local transactions with compensating actions, a durable journal, and a runnable Python orchestrator.
+
 
 **[Stop Trying to Invalidate Your Cache. Budget the Staleness Instead.](https://anushamukka.com/posts/stop-trying-to-invalidate-your-cache/)** · by Anusha Mukka
 
