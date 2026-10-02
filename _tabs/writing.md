@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Prompt Template Is a Code Execution Surface](https://anushamukka.com/posts/your-prompt-template-is-a-code-execution-surface/)** · by Anusha Mukka
+
+GitLab's CVE-2026-90970 let an authenticated user with basic privileges escape the AI Gateway's prompt template sandbox and run arbitrary commands. On the template boundary nobody audits, why sandboxes fail, and the afternoon-sized hardening pass for your own stack.
+
 **[Two-Phase Commit Is a Promise No One Can Keep](https://anushamukka.com/posts/two-phase-commit-is-a-promise-no-one-can-keep/)** · by Anusha Mukka
 
 When the coordinator dies mid-commit, the participants hold their locks forever. On the blocking window every explainer mentions and none of them replace, why no protocol variant closes it, and the saga pattern that does: sequential local transactions with compensating actions, a durable journal, and a runnable Python orchestrator.
