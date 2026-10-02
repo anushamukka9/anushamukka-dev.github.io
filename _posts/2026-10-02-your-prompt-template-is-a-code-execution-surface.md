@@ -43,6 +43,7 @@ Let me give you the mechanism, because the mechanism is the part every explainer
 
 A flow configuration is a template with holes in it. At request time, the gateway fills the holes and hands the result to the model as a prompt. Here is a flow config rendering the ordinary, legitimate way, in Jinja2's sandboxed environment:
 
+{% raw %}
 ```python
 from jinja2.sandbox import SandboxedEnvironment
 env = SandboxedEnvironment()
@@ -54,6 +55,7 @@ Diff context lines: {{ context_lines | default(3) }}."""
 print(env.from_string(flow_template).render(
     repo="checkout-service", focus="SQL injection"))
 ```
+{% endraw %}
 
 Output:
 
@@ -65,10 +67,12 @@ Diff context lines: 3.
 
 Nothing scary. Now the same engine, fed the classic server-side template injection payload, the one that has worked against naive template steps for a decade:
 
+{% raw %}
 ```python
 payload = "{{ ''.__class__.__mro__[1].__subclasses__() }}"
 print(env.from_string(payload).render())
 ```
+{% endraw %}
 
 The sandbox stops it:
 
@@ -78,6 +82,7 @@ SecurityError: access to attribute '__class__' of 'str' object is unsafe.
 
 Good. That is the sandbox doing its job. But watch what happens when the template step is the plain, unsandboxed engine, which is what a hand-rolled "prompt builder" behaves like when a team writes its own rendering step and forgets the sandbox exists:
 
+{% raw %}
 ```python
 from jinja2 import Environment
 env = Environment()
@@ -89,6 +94,7 @@ finder = """{% for c in ''.__class__.__mro__[1].__subclasses__() %}\
 
 print(env.from_string(finder).render())
 ```
+{% endraw %}
 
 Output:
 
@@ -137,6 +143,7 @@ Third, assume the sandbox will fail and design for the failure. The renderer sho
 
 Fourth, scan what you already have. List every place a user-influenced string meets a template engine: flow configs, custom instruction templates, email templates, report builders. A first pass fits in an afternoon:
 
+{% raw %}
 ```bash
 # find template syntax in flow configs and custom templates
 grep -rn "{{" flows/ templates/ prompts/ --include="*.yaml" --include="*.json" | head -50
@@ -145,6 +152,7 @@ grep -rn "{{" flows/ templates/ prompts/ --include="*.yaml" --include="*.json" |
 # (your IAM console, your gateway's role bindings: whoever shows up here
 #  holds code execution on the renderer until proven otherwise)
 ```
+{% endraw %}
 
 Then run your static scanner's template-injection rules over the same paths. Semgrep's default rule set includes Jinja2 SSTI rules. They catch known patterns, not novel neutralizations, but known patterns are what most hand-rolled template steps contain.
 
