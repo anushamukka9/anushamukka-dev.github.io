@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Prompt Filter Passed and the Attack Still Ran](https://anushamukka.com/posts/your-prompt-filter-passed-and-the-attack-still-ran/)** · by Anusha Mukka
+
+Salt Labs hid a prompt inside an email, encoded it as JSFuck, and the Manus agent decoded it and ran the code server-side. On why the prompt filter flagged the attack and lost anyway, and the deny-by-default tool gate that is the real boundary.
+
 **[Your Prompt Template Is a Code Execution Surface](https://anushamukka.com/posts/your-prompt-template-is-a-code-execution-surface/)** · by Anusha Mukka
 
 GitLab's CVE-2026-90970 let an authenticated user with basic privileges escape the AI Gateway's prompt template sandbox and run arbitrary commands. On the template boundary nobody audits, why sandboxes fail, and the afternoon-sized hardening pass for your own stack.
