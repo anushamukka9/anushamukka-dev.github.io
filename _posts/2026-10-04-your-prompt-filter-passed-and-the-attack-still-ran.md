@@ -167,7 +167,7 @@ What is the most creative filter bypass you have seen in production, and did the
 2. [GitLab Patches Critical CVE-2026-90970 in Self-Hosted AI Gateway](https://aiweekly.co/alerts/gitlab-patches-critical-cve-2026-90970-in-self-hosted-ai-gateway-cvss-99-lets): AI Weekly, October 2026 (prompt-template sandbox escape in custom flows; fixed in 19.2.4, 19.3.2, 19.4.1)
 3. [Your Agent Took an Action You Did Not Intend](https://dev.to/anusha_mukka/your-agent-took-an-action-you-did-not-intend-2koi): my earlier piece on the deny-by-default policy gate at the tool boundary
 4. [Your AI Agent Is a Confused Deputy](https://dev.to/anusha_mukka/your-ai-agent-is-a-confused-deputy-d22): on agents acting on attacker-crafted data with your authority, and why allowed-tool combinations still need watching
-5. [JSFuck: write any JavaScript with six characters](http://www.jsfuck.com/): the obfuscation scheme behind the attack; paste `(![]+"")[+[]]` into a console and watch it return "f"
+5. [JSFuck: write any JavaScript with six characters](https://jsfuck.com/): the obfuscation scheme behind the attack; paste `(![]+"")[+[]]` into a console and watch it return "f"
 
 ---
 Suggested Medium topics: Artificial Intelligence, Cybersecurity, Programming, Software Engineering, Technology
