@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Election Crowned Two Kings](https://anushamukka.com/posts/your-election-crowned-two-kings/)** · by Anusha Mukka
+
+Your leader election worked and crowned two leaders anyway. On zombie leaders, the split-brain window every system has, and fencing tokens: the storage-side integer that rejects a deposed leader's writes without it ever learning it was deposed.
+
 **[Your Prompt Filter Passed and the Attack Still Ran](https://anushamukka.com/posts/your-prompt-filter-passed-and-the-attack-still-ran/)** · by Anusha Mukka
 
 Salt Labs hid a prompt inside an email, encoded it as JSFuck, and the Manus agent decoded it and ran the code server-side. On why the prompt filter flagged the attack and lost anyway, and the deny-by-default tool gate that is the real boundary.
