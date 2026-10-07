@@ -94,3 +94,7 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [When the Cloud is Too Slow: Enter Fog Computing](https://dev.to/anusha_mukka/when-the-cloud-is-too-slow-enter-fog-computing-2egh)
 - [Exactly-Once Delivery Is a Lie. Idempotency Keys Are the Practical Answer.](https://dev.to/anusha_mukka/exactly-once-delivery-is-a-lie-idempotency-keys-are-the-practical-answer-3351)
 - [Your Agent Took an Action You Did Not Intend](https://dev.to/anusha_mukka/your-agent-took-an-action-you-did-not-intend-2koi)
+- [Your Agent Reads Your Database. Your Attacker Writes to It.](https://dev.to/anusha_mukka/your-agent-reads-your-database-your-attacker-writes-to-it-57l9)
+- [Your Attacker Runs an Agent Too: Detecting Agent-Shaped Attacks](https://dev.to/anusha_mukka/your-attacker-runs-an-agent-too-detecting-agent-shaped-attacks-4p6n)
+- [Consensus Is the Most Expensive Word in Your Architecture](https://dev.to/anusha_mukka/consensus-is-the-most-expensive-word-in-your-architecture-2npd)
+- [Your Guardrail Cannot Read What Your Agent Is About to Run](https://dev.to/anusha_mukka/your-guardrail-cannot-read-what-your-agent-is-about-to-run-3eci)
