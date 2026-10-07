@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your p99 Is a Product Decision: Hedged Requests and the Long Tail](https://anushamukka.com/posts/your-p99-is-a-product-decision/)** · by Anusha Mukka
+
+Your p50 is 40ms and your p99 is 11 seconds, and both are true. On the fan-out arithmetic that makes the tail the median experience, and hedged requests: the deliberately impatient client policy that trades one extra request for a forty-fold cut in tail latency.
+
 **[Your Election Crowned Two Kings](https://anushamukka.com/posts/your-election-crowned-two-kings/)** · by Anusha Mukka
 
 Your leader election worked and crowned two leaders anyway. On zombie leaders, the split-brain window every system has, and fencing tokens: the storage-side integer that rejects a deposed leader's writes without it ever learning it was deposed.
