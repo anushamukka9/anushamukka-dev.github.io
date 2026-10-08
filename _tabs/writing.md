@@ -98,3 +98,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Your Attacker Runs an Agent Too: Detecting Agent-Shaped Attacks](https://dev.to/anusha_mukka/your-attacker-runs-an-agent-too-detecting-agent-shaped-attacks-4p6n)
 - [Consensus Is the Most Expensive Word in Your Architecture](https://dev.to/anusha_mukka/consensus-is-the-most-expensive-word-in-your-architecture-2npd)
 - [Your Guardrail Cannot Read What Your Agent Is About to Run](https://dev.to/anusha_mukka/your-guardrail-cannot-read-what-your-agent-is-about-to-run-3eci)
+- [Your Agent Should Not Borrow Your API Key](https://dev.to/anusha_mukka/your-agent-should-not-borrow-your-api-key-3gi2)
