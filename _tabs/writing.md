@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Adding One Node Should Not Move Ninety Percent of Your Keys](https://anushamukka.com/posts/adding-one-node-should-not-move-ninety-percent-of-your-keys/)** · by Anusha Mukka
+
+Adding one cache node out of ten should not send 90 percent of your keys to new owners. On hash modulo as a reshuffle button, and consistent hashing: the ring, virtual nodes, and bounded load that move only the keys next door.
+
 **[Your p99 Is a Product Decision: Hedged Requests and the Long Tail](https://anushamukka.com/posts/your-p99-is-a-product-decision/)** · by Anusha Mukka
 
 Your p50 is 40ms and your p99 is 11 seconds, and both are true. On the fan-out arithmetic that makes the tail the median experience, and hedged requests: the deliberately impatient client policy that trades one extra request for a forty-fold cut in tail latency.
