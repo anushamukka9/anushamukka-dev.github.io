@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Adding One Node Should Not Move Ninety Percent of Your Keys"
-date: 2026-10-09 07:00:00 -0500
+date: 2026-10-09 06:35:00 -0400
 categories: [Writing]
 tags: [Distributed Systems, Consistent Hashing, Sharding, Scalability, Reliability]
 description: "Adding one cache node out of ten should not send 90 percent of your keys to new owners. On hash modulo as a reshuffle button, and consistent hashing: the ring, virtual nodes, and bounded load that move only the keys next door."
