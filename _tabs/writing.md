@@ -103,3 +103,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Consensus Is the Most Expensive Word in Your Architecture](https://dev.to/anusha_mukka/consensus-is-the-most-expensive-word-in-your-architecture-2npd)
 - [Your Guardrail Cannot Read What Your Agent Is About to Run](https://dev.to/anusha_mukka/your-guardrail-cannot-read-what-your-agent-is-about-to-run-3eci)
 - [Your Agent Should Not Borrow Your API Key](https://dev.to/anusha_mukka/your-agent-should-not-borrow-your-api-key-3gi2)
+- [Your Agent Forgot What It Did: Build an Audit Trail It Cannot Edit](https://dev.to/anusha_mukka/your-agent-forgot-what-it-did-build-an-audit-trail-it-cannot-edit-349h)
