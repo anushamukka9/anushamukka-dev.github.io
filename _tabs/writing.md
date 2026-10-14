@@ -109,3 +109,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Your Agent Should Not Borrow Your API Key](https://dev.to/anusha_mukka/your-agent-should-not-borrow-your-api-key-3gi2)
 - [Your Agent Forgot What It Did: Build an Audit Trail It Cannot Edit](https://dev.to/anusha_mukka/your-agent-forgot-what-it-did-build-an-audit-trail-it-cannot-edit-349h)
 - [Your Rate Limiter Is a Stampede at the Window Boundary](https://dev.to/anusha_mukka/your-rate-limiter-is-a-stampede-at-the-window-boundary-16ga)
+- [Your Agent Platform Fails Open: No Identity Provider Should Mean No Access](https://dev.to/anusha_mukka/your-agent-platform-fails-open-no-identity-provider-should-mean-no-access-2bil)
