@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Timeout Is Not a Deadline](https://anushamukka.com/posts/your-timeout-is-not-a-deadline/)** · by Anusha Mukka
+
+Your client gave up at two seconds. Your database kept working for nine. On timeouts versus deadlines: one budget created at the edge, carried with the request, checked before work starts, and used to refuse work that cannot finish in time.
+
 **[Adding One Node Should Not Move Ninety Percent of Your Keys](https://anushamukka.com/posts/adding-one-node-should-not-move-ninety-percent-of-your-keys/)** · by Anusha Mukka
 
 Adding one cache node out of ten should not send 90 percent of your keys to new owners. On hash modulo as a reshuffle button, and consistent hashing: the ring, virtual nodes, and bounded load that move only the keys next door.
