@@ -39,3 +39,10 @@
   ]
 }
 </script>
+
+<!-- SEO trim (2026-10-19): tag/category listing pages (jekyll-archives pages and
+     the tags/categories tabs) carry noindex so they stop crowding the "Anusha Mukka"
+     name search. Their links are still followed. -->
+{% if page.layout == 'tag' or page.layout == 'category' or page.layout == 'tags' or page.layout == 'categories' or page.url contains '/tags/' or page.url contains '/categories/' %}
+<meta name="robots" content="noindex, follow">
+{% endif %}
