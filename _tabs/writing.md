@@ -10,6 +10,18 @@ seo:
 ---
 
 ## Featured
+**[Your Failure Detector Cannot Tell Dead From Slow](https://anushamukka.com/posts/your-failure-detector-cannot-tell-dead-from-slow/)** · by Anusha Mukka
+
+Silence is the only signal a heartbeat gives you, and a crashed node and a paused node are silent in exactly the same way. On fixed timeouts, the phi accrual detector in Cassandra and Akka, and choosing a threshold from the cost of being wrong in each direction.
+
+**[Your Commit Is a Promise About a Log, Not About Your Tables](https://anushamukka.com/posts/your-commit-is-a-promise-about-a-log/)** · by Anusha Mukka
+
+Postgres can lose every changed data page in a crash and still keep its promise to you. It cannot lose the log. On write-ahead logging: log before data, log before acknowledgment, and the two rules under every durability promise.
+
+**[You Cannot Update a Database and a Queue in One Breath](https://anushamukka.com/posts/you-cannot-update-a-database-and-a-queue-in-one-breath/)** · by Anusha Mukka
+
+Your order row committed. Your event never left the building. On the dual-write problem and the transactional outbox: write the event in the same transaction as the state, let a relay publish at least once, and pair it with a consumer inbox so duplicates cannot apply twice.
+
 **[Your Timeout Is Not a Deadline](https://anushamukka.com/posts/your-timeout-is-not-a-deadline/)** · by Anusha Mukka
 
 Your client gave up at two seconds. Your database kept working for nine. On timeouts versus deadlines: one budget created at the edge, carried with the request, checked before work starts, and used to refuse work that cannot finish in time.
@@ -110,3 +122,5 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Your Agent Forgot What It Did: Build an Audit Trail It Cannot Edit](https://dev.to/anusha_mukka/your-agent-forgot-what-it-did-build-an-audit-trail-it-cannot-edit-349h)
 - [Your Rate Limiter Is a Stampede at the Window Boundary](https://dev.to/anusha_mukka/your-rate-limiter-is-a-stampede-at-the-window-boundary-16ga)
 - [Your Agent Platform Fails Open: No Identity Provider Should Mean No Access](https://dev.to/anusha_mukka/your-agent-platform-fails-open-no-identity-provider-should-mean-no-access-2bil)
+- [One Prompt Took Over Every Agent in the Account: The Default Role Is the Blast Radius](https://dev.to/anusha_mukka/one-prompt-took-over-every-agent-in-the-account-the-default-role-is-the-blast-radius-2h4l)
+- [Your Eval Harness Is a Production Agent You Forgot to Secure](https://dev.to/anusha_mukka/your-eval-harness-is-a-production-agent-you-forgot-to-secure-1c0l)
