@@ -191,6 +191,16 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  # SEO trim (2026-10-19): exclude jekyll-archives tag/category pages from the
+  # sitemap; the matching noindex meta lives in _includes/metadata-hook.html.
+  - scope:
+      path: "tags"
+    values:
+      sitemap: false
+  - scope:
+      path: "categories"
+    values:
+      sitemap: false
 
 sass:
   style: compressed
