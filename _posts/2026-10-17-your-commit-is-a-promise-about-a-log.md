@@ -5,7 +5,7 @@ date: 2026-10-17 09:11:00 -0400
 categories: [Writing]
 tags: [Databases, Distributed Systems, Reliability, Software Engineering]
 permalink: /posts/your-commit-is-a-promise-about-a-log/
-description: A commit does not mean your data pages reached disk. It means the write-ahead log did: log before data, log before acknowledgment. Runnable Python WAL with torn-tail recovery, checkpoints, and group commit.
+description: "A commit does not mean your data pages reached disk. It means the write-ahead log did: log before data, log before acknowledgment. Runnable Python WAL with torn-tail recovery, checkpoints, and group commit."
 ---
 
 # Your Commit Is a Promise About a Log, Not About Your Tables
