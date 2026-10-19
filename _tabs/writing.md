@@ -10,15 +10,15 @@ seo:
 ---
 
 ## Featured
-**[Your Failure Detector Cannot Tell Dead From Slow](https://anushamukka.com/posts/2026-10-19-your-failure-detector-cannot-tell-dead-from-slow/)** · by Anusha Mukka
+**[Your Failure Detector Cannot Tell Dead From Slow](https://anushamukka.com/posts/your-failure-detector-cannot-tell-dead-from-slow/)** · by Anusha Mukka
 
 Silence is the only signal a heartbeat gives you, and a crashed node and a paused node are silent in exactly the same way. On fixed timeouts, the phi accrual detector in Cassandra and Akka, and choosing a threshold from the cost of being wrong in each direction.
 
-**[Your Commit Is a Promise About a Log, Not About Your Tables](https://anushamukka.com/posts/2026-10-17-your-commit-is-a-promise-about-a-log/)** · by Anusha Mukka
+**[Your Commit Is a Promise About a Log, Not About Your Tables](https://anushamukka.com/posts/your-commit-is-a-promise-about-a-log/)** · by Anusha Mukka
 
 Postgres can lose every changed data page in a crash and still keep its promise to you. It cannot lose the log. On write-ahead logging: log before data, log before acknowledgment, and the two rules under every durability promise.
 
-**[You Cannot Update a Database and a Queue in One Breath](https://anushamukka.com/posts/2026-10-15-you-cannot-update-a-database-and-a-queue-in-one-breath/)** · by Anusha Mukka
+**[You Cannot Update a Database and a Queue in One Breath](https://anushamukka.com/posts/you-cannot-update-a-database-and-a-queue-in-one-breath/)** · by Anusha Mukka
 
 Your order row committed. Your event never left the building. On the dual-write problem and the transactional outbox: write the event in the same transaction as the state, let a relay publish at least once, and pair it with a consumer inbox so duplicates cannot apply twice.
 
