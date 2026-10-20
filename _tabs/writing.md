@@ -124,3 +124,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Your Agent Platform Fails Open: No Identity Provider Should Mean No Access](https://dev.to/anusha_mukka/your-agent-platform-fails-open-no-identity-provider-should-mean-no-access-2bil)
 - [One Prompt Took Over Every Agent in the Account: The Default Role Is the Blast Radius](https://dev.to/anusha_mukka/one-prompt-took-over-every-agent-in-the-account-the-default-role-is-the-blast-radius-2h4l)
 - [Your Eval Harness Is a Production Agent You Forgot to Secure](https://dev.to/anusha_mukka/your-eval-harness-is-a-production-agent-you-forgot-to-secure-1c0l)
+- [Revocation Is the Real Test: If You Cannot Kill One Agent in Minutes, You Never Controlled It](https://dev.to/anusha_mukka/revocation-is-the-real-test-if-you-cannot-kill-one-agent-in-minutes-you-never-controlled-it-5e0a)
