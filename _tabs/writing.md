@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Timestamps Cannot Order Your Writes](https://anushamukka.com/posts/your-timestamps-cannot-order-your-writes/)** · by Anusha Mukka
+
+Two replicas can disagree about which write came last, and both can be telling the truth about their own clocks. On Lamport's happened-before relation, vector clocks that return before, after, or concurrent, and keeping both versions instead of losing one quietly.
+
 **[Your Failure Detector Cannot Tell Dead From Slow](https://anushamukka.com/posts/your-failure-detector-cannot-tell-dead-from-slow/)** · by Anusha Mukka
 
 Silence is the only signal a heartbeat gives you, and a crashed node and a paused node are silent in exactly the same way. On fixed timeouts, the phi accrual detector in Cassandra and Akka, and choosing a threshold from the cost of being wrong in each direction.
