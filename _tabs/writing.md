@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Keeping Both Versions Is Not a Merge](https://anushamukka.com/posts/keeping-both-versions-is-not-a-merge/)** · by Anusha Mukka
+
+Two replicas increment the same counter during a partition and the obvious merge loses one of them. On conflict-free replicated data types: per-replica counter slots, add-wins sets where you can only remove what you have seen, convergence in any merge order, and the invariants no CRDT can enforce.
+
 **[Your Timestamps Cannot Order Your Writes](https://anushamukka.com/posts/your-timestamps-cannot-order-your-writes/)** · by Anusha Mukka
 
 Two replicas can disagree about which write came last, and both can be telling the truth about their own clocks. On Lamport's happened-before relation, vector clocks that return before, after, or concurrent, and keeping both versions instead of losing one quietly.
