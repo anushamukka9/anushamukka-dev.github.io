@@ -134,3 +134,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Your Eval Harness Is a Production Agent You Forgot to Secure](https://dev.to/anusha_mukka/your-eval-harness-is-a-production-agent-you-forgot-to-secure-1c0l)
 - [Revocation Is the Real Test: If You Cannot Kill One Agent in Minutes, You Never Controlled It](https://dev.to/anusha_mukka/revocation-is-the-real-test-if-you-cannot-kill-one-agent-in-minutes-you-never-controlled-it-5e0a)
 - [The Subagent Talked Its Way Onto Your Task: Assignment Is Not a Prompt](https://dev.to/anusha_mukka/the-subagent-talked-its-way-onto-your-task-assignment-is-not-a-prompt-f1b)
+- [The Agent Logged In as You: A Session Is Not an Instruction](https://dev.to/anusha_mukka/the-agent-logged-in-as-you-a-session-is-not-an-instruction-3iog)
