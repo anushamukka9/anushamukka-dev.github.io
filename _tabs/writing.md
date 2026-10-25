@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Ship Hashes, Not Rows: Merkle Trees Find the Replica That Drifted](https://anushamukka.com/posts/ship-hashes-not-rows/)** · by Anusha Mukka
+
+Two replicas diverged over a weekend and nobody can list the records that moved. On anti-entropy with Merkle trees: bucket hashes, a walk that finds seven bad records in seventeen comparisons, and repair that ships the records that changed instead of the dataset.
+
 **[Keeping Both Versions Is Not a Merge](https://anushamukka.com/posts/keeping-both-versions-is-not-a-merge/)** · by Anusha Mukka
 
 Two replicas increment the same counter during a partition and the obvious merge loses one of them. On conflict-free replicated data types: per-replica counter slots, add-wins sets where you can only remove what you have seen, convergence in any merge order, and the invariants no CRDT can enforce.
