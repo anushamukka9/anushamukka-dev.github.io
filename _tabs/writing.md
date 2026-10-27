@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[A Bloom Filter Lies in One Direction Only](https://anushamukka.com/posts/a-bloom-filter-lies-in-one-direction-only/)** · by Anusha Mukka
+
+Ten thousand keys fit in ten kilobytes, and the structure sometimes says yes when the answer is no. It never says no when the answer is yes. On the sizing formula, the optimal number of hash functions, measured error rates, silent overfill, and why you cannot delete from a plain filter.
+
 **[Ship Hashes, Not Rows: Merkle Trees Find the Replica That Drifted](https://anushamukka.com/posts/ship-hashes-not-rows/)** · by Anusha Mukka
 
 Two replicas diverged over a weekend and nobody can list the records that moved. On anti-entropy with Merkle trees: bucket hashes, a walk that finds seven bad records in seventeen comparisons, and repair that ships the records that changed instead of the dataset.
