@@ -139,3 +139,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Revocation Is the Real Test: If You Cannot Kill One Agent in Minutes, You Never Controlled It](https://dev.to/anusha_mukka/revocation-is-the-real-test-if-you-cannot-kill-one-agent-in-minutes-you-never-controlled-it-5e0a)
 - [The Subagent Talked Its Way Onto Your Task: Assignment Is Not a Prompt](https://dev.to/anusha_mukka/the-subagent-talked-its-way-onto-your-task-assignment-is-not-a-prompt-f1b)
 - [The Agent Logged In as You: A Session Is Not an Instruction](https://dev.to/anusha_mukka/the-agent-logged-in-as-you-a-session-is-not-an-instruction-3iog)
+- [Denied Is Not a Stop Sign If Another Key Is in the Room](https://dev.to/anusha_mukka/denied-is-not-a-stop-sign-if-another-key-is-in-the-room-hc)
