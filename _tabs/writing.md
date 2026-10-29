@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Pick Two at Random, Keep the Quieter One](https://anushamukka.com/posts/pick-two-at-random-keep-the-quieter-one/)** · by Anusha Mukka
+
+Your fleet average looks calm while one server carries a third more than it should. On sampling two servers and keeping the quieter one: a maximum of 102 against 132 at an average of 100, why more choices buy almost nothing, and why a full scan herds under concurrency.
+
 **[A Bloom Filter Lies in One Direction Only](https://anushamukka.com/posts/a-bloom-filter-lies-in-one-direction-only/)** · by Anusha Mukka
 
 Ten thousand keys fit in ten kilobytes, and the structure sometimes says yes when the answer is no. It never says no when the answer is yes. On the sizing formula, the optimal number of hash functions, measured error rates, silent overfill, and why you cannot delete from a plain filter.
