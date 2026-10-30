@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Every Tool You List Taxes Every Call](https://anushamukka.com/posts/every-tool-you-list-taxes-every-call/)** · by Anusha Mukka
+
+Connect an MCP server and the agent pays for every tool it advertises, on every turn, whether it calls any of them or not. On the tool list as rent: a measured 1,408 tokens per turn for 15 tools against 533 trimmed and 422 deferred, the published server medians, and budgeting the list in tokens instead of tool count.
+
 **[Pick Two at Random, Keep the Quieter One](https://anushamukka.com/posts/pick-two-at-random-keep-the-quieter-one/)** · by Anusha Mukka
 
 Your fleet average looks calm while one server carries a third more than it should. On sampling two servers and keeping the quieter one: a maximum of 102 against 132 at an average of 100, why more choices buy almost nothing, and why a full scan herds under concurrency.
