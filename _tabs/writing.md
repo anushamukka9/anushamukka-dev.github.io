@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Framework Will Not Stop a Poisoned Tool](https://anushamukka.com/posts/your-framework-will-not-stop-a-poisoned-tool/)** · by Anusha Mukka
+
+A 9,720-test study found poisoned MCP tools succeeded 22.9 percent of the time, and not one of the 12 frameworks tested had a defense of its own. On checking the call instead of the text: a destination allowlist, a taint check on outbound values, and a description hash that is rechecked at run time, with measured demo results.
+
 **[Every Tool You List Taxes Every Call](https://anushamukka.com/posts/every-tool-you-list-taxes-every-call/)** · by Anusha Mukka
 
 Connect an MCP server and the agent pays for every tool it advertises, on every turn, whether it calls any of them or not. On the tool list as rent: a measured 1,408 tokens per turn for 15 tools against 533 trimmed and 422 deferred, the published server medians, and budgeting the list in tokens instead of tool count.
