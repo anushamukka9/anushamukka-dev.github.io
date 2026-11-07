@@ -159,3 +159,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [The Agent Turned Off Its Own Alarm: Put the Monitor Outside the Agent's Reach](https://dev.to/anusha_mukka/the-agent-turned-off-its-own-alarm-put-the-monitor-outside-the-agents-reach-52i2)
 - [Exploitation Started Four Days Before the Patch: PHP2Shell and the End of the Patch Window](https://dev.to/anusha_mukka/exploitation-started-four-days-before-the-patch-php2shell-and-the-end-of-the-patch-window-44kg)
 - [Your Log File Can Hijack Your Agent: Sanitize Logs Before the Model Reads Them](https://dev.to/anusha_mukka/your-log-file-can-hijack-your-agent-sanitize-logs-before-the-model-reads-them-55h9)
+- [Your Coding Agent Reads the Folder First: Scan the Workspace Before You Start It](https://dev.to/anusha_mukka/your-coding-agent-reads-the-folder-first-scan-the-workspace-before-you-start-it-299f)
