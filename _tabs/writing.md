@@ -10,6 +10,10 @@ seo:
 ---
 
 ## Featured
+**[Your Agent Installs What It Remembers, Not What Is Safe](https://anushamukka.com/posts/your-agent-installs-what-it-remembers/)** · by Anusha Mukka
+
+Glow Labs found coding agents installing MCP servers archived in May 2025 and never to be patched, because the package name lives in training data: 17.3 million downloads since July 2025 and an unpatched Puppeteer RCE. On the install gate that checks the proposal instead of trusting the recall: an archived list, one approved server per service, and a pinned version, with measured demo results.
+
 **[Your Framework Will Not Stop a Poisoned Tool](https://anushamukka.com/posts/your-framework-will-not-stop-a-poisoned-tool/)** · by Anusha Mukka
 
 A 9,720-test study found poisoned MCP tools succeeded 22.9 percent of the time, and not one of the 12 frameworks tested had a defense of its own. On checking the call instead of the text: a destination allowlist, a taint check on outbound values, and a description hash that is rechecked at run time, with measured demo results.
