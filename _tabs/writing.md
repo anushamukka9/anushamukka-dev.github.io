@@ -164,3 +164,4 @@ I also publish on [DEV Community](https://dev.to/anusha_mukka) - essays on scale
 - [Exploitation Started Four Days Before the Patch: PHP2Shell and the End of the Patch Window](https://dev.to/anusha_mukka/exploitation-started-four-days-before-the-patch-php2shell-and-the-end-of-the-patch-window-44kg)
 - [Your Log File Can Hijack Your Agent: Sanitize Logs Before the Model Reads Them](https://dev.to/anusha_mukka/your-log-file-can-hijack-your-agent-sanitize-logs-before-the-model-reads-them-55h9)
 - [Your Coding Agent Reads the Folder First: Scan the Workspace Before You Start It](https://dev.to/anusha_mukka/your-coding-agent-reads-the-folder-first-scan-the-workspace-before-you-start-it-299f)
+- [Your MCP Server Listens to Everyone: Authenticate the Caller, Not the Address](https://dev.to/anusha_mukka/your-mcp-server-listens-to-everyone-authenticate-the-caller-not-the-address-53al)
